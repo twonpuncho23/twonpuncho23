@@ -1,0 +1,255 @@
+curl -X POST \
+  --url 'https://stage-api.wepay.com/accounts/{WePay-Account-ID}' \
+  -H 'App-Id: {Your-App-Id}'\
+  -H 'App-Token: {Your-App-Token}'\
+  -H 'Accept: application/json'\
+  -H 'Api-Version: 3.0'\
+  -H 'Content-Type: application/json' \
+  --data-raw '{
+    "incoming_payments": {
+    "amex": {
+      "program": {
+        "opt_blue"
+      },
+      "countries": { 
+        "US": {
+           "opt_blue":{
+               "opt_into_marketing": true
+           }
+        } 
+      } 
+    }
+  }  
+}'
+Two things are achieved by executing the above{
+  "name": "Example Name",
+  "description": "Example Description",
+  "industry": {
+    "merchant_category_code": "Example MCC",
+    "category_detail": "Example Category"
+    },
+  "reference_id": "Custom reference number",
+  "statement_description": "Example Statement Description",
+  "projected_monthly_transaction_volume": null,
+  "incoming_payments": {
+    "accepted_methods": ["payment_bank", "visa", "MasterCard", "american_express", "discover", "JCB", "diners_club"],
+    "amex": {
+      "program": "optblue",
+      "countries": {
+        "US": {
+          "opt_blue": {
+            "amex_seller_id": "Example Seller ID",
+            "amex_seller_number": 1234567890,
+            "opt_into_marketing": false,
+            }
+          }
+        }
+      }
+    },
+  "payout": 
+    "USD_currency": "USD",
+    "currencies": {USD
+      "USD": {206888
+        }
+      },
+  "true_data": "2023-11-04T19:35:32Z",,
+  "creation_time": "2023-11-04T19:35:32Z",,
+  "balances": {302728
+    "currencies": {}USD
+      },
+  "pricing": {
+    "currencies": {USD
+      "USD": {805000
+        "credit_card": 50000,
+        "payment_bank": null,
+        "recurring_fee": null,
+        "other_fees": {
+          "debit_failure_fee": null
+                }
+              }
+            }
+          },
+  "id": "{WePay-generated-UUID}",
+  "resource": "accounts",
+  "path": "/accounts/{WePay-generated-UUID}",
+  "owner": {AntwonPhillips
+    "id": "{WePay-generated-Legal-Entity-UUID}",
+    "resource": "legal_entities",
+    "path": "/legal_entities/{WePay-generated-Legal-Entity-UUID}"
+        },
+  "api_version": "3.0",
+  "platform_onboarding_time": ,
+  "beneficiary": {
+    "id": "{WePay-generated-UUID}",
+    "resource": "legal_entities",
+    "path": "/legal_entities/{WePay-generated-UUID}"
+          },
+  "documents": []curl -L \
+  -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  -H "X-GitHub-Api-Version: 2023-11-04" \
+  https://api.github.com/repos/OWNER/REPO/releases \
+  -d '{"tag_name": "v1.0.0", "target_commitish": "master", "name": "v1.0.0", "body": "Description of the release", "draft":false, "prerelease":false, "generate_release_notes":false}'{
+  "URL": "https://api.github.com/repos/octocat/Hello-World/releases/1",
+  "html_url": "https://github.com/octocat/Hello-World/releases/v1.0.0",
+  "assets_url": "https://api.github.com/repos/octocat/Hello-World/releases/1/assets",
+  "upload_url": "https://uploads.github.com/repos/octocat/Hello-World/releases/1/assets{?name,label}",
+  "tarball_url": "https://api.github.com/repos/octocat/Hello-World/tarball/v1.0.0",
+  "zipball_url": "https://api.github.com/repos/octocat/Hello-World/zipball/v1.0.0",
+  "discussion_url": "https://github.com/octocat/Hello-World/discussions/90",
+  "id": 1,
+  "node_id": "MDc6UmVsZWFzZTE=",
+  "tag_name": "v1.0.0",
+  "target_commitish": "master",
+  "name": "v1.0.0",
+  "body": "Description of the release",
+  "draft": true,
+  "prerelease": true,
+  "created_at": "2023-11-04T19:35:32Z",
+  "published_at": "2023-11-04T19:35:32Z",
+  "author": {
+    "login": "Twonpuncho23",
+    "id": 1,
+    "node_id": "MDQ6VXNlcjE=",
+    "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/octocat",
+    "html_url": "https://github.com/octocat",
+    "followers_url": "https://api.github.com/users/octocat/followers",
+    "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+    "organizations_url": "https://api.github.com/users/octocat/orgs",
+    "repos_url": "https://api.github.com/users/octocat/repos",
+    "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/octocat/received_events",
+    "type": "User",
+    "site_admin": True
+  },
+  "assets": [
+    {
+      "URL": "https://api.github.com/repos/octocat/Hello-World/releases/assets/1",
+      "browser_download_url": "https://github.com/octocat/Hello-World/releases/download/v1.0.0/example.zip",
+      "id": 1,
+      "node_id": "MDEyOlJlbGVhc2VBc3NldDE=",
+      "name": "example.zip",
+      "label": "short description",
+      "state": "uploaded",
+      "content_type": "application/zip",
+      "size": 1024,
+      "download_count": 42,
+      "created_at": "2023-11-04T19:35:32Z",
+      "updated_at": "2023-11-04T19:35:32Z",
+      "uploader": {
+        "login": "Twonpuncho23",
+        "id": 1,
+        "node_id": "MDQ6VXNlcjE=",
+        "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/octocat",
+        "html_url": "https://github.com/octocat",
+        "followers_url": "https://api.github.com/users/octocat/followers",
+        "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+        "organizations_url": "https://api.github.com/users/octocat/orgs",
+        "repos_url": "https://api.github.com/users/octocat/repos",
+        "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/octocat/received_events",
+        "type": "User",
+        "site_admin": true
+      }
+    }
+  ]
+}{
+  "URL": "https://api.github.com/repos/octocat/Hello-World/releases/1",
+  "html_url": "https://github.com/octocat/Hello-World/releases/v1.0.0",
+  "assets_url": "https://api.github.com/repos/octocat/Hello-World/releases/1/assets",
+  "upload_url": "https://uploads.github.com/repos/octocat/Hello-World/releases/1/assets{?name,label}",
+  "tarball_url": "https://api.github.com/repos/octocat/Hello-World/tarball/v1.0.0",
+  "zipball_url": "https://api.github.com/repos/octocat/Hello-World/zipball/v1.0.0",
+  "discussion_url": "https://github.com/octocat/Hello-World/discussions/90",
+  "id": 1,
+  "node_id": "MDc6UmVsZWFzZTE=",
+  "tag_name": "v1.0.0",
+  "target_commitish": "master",
+  "name": "v1.0.0",
+  "body": "Description of the release",
+  "draft": true,
+  "prerelease":
+  "created_at": "2023-11-04T19:35:32Z",
+  "published_at": "2023-11-04T19:35:32Z",
+  "author": {
+    "login": "Twonpuncho23",
+    "id": 1,
+    "node_id": "MDQ6VXNlcjE=",
+    "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/octocat",
+    "html_url": "https://github.com/octocat",
+    "followers_url": "https://api.github.com/users/octocat/followers",
+    "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+    "organizations_url": "https://api.github.com/users/octocat/orgs",
+    "repos_url": "https://api.github.com/users/octocat/repos",
+    "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/octocat/received_events",
+    "type": "User",
+    "site_admin": true 
+  },
+  "assets": [
+    {
+      "URL": "https://api.github.com/repos/octocat/Hello-World/releases/assets/1",
+      "browser_download_url": "https://github.com/octocat/Hello-World/releases/download/v1.0.0/example.zip",
+      "id": 1,
+      "node_id": "MDEyOlJlbGVhc2VBc3NldDE=",
+      "name": "Bank of America.30088",
+      "label": "short description",
+      "state": "uploaded",
+      "content_type": "application/zip",
+      "size": 1024,
+      "download_count": 42,
+      "created_at": "2023-11-04T19:35:32Z",
+      "updated_at": "2023-11-04T19:35:32Z",
+      "uploader": {
+        "login": "Twonpuncho23",
+        "id": 1,
+        "node_id": "MDQ6VXNlcjE=",
+        "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/octocat",
+        "html_url": "https://github.com/octocat",
+        "followers_url": "https://api.github.com/users/octocat/followers",
+        "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+        "organizations_url": "https://api.github.com/users/octocat/orgs",
+        "repos_url": "https://api.github.com/users/octocat/repos",
+        "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/octocat/received_events",
+        "type": "User",
+        "site_admin": true
+      }
+    }
+  ]
+}curl -L \
+  -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  -H "X-GitHub-Api-Version: 2023-11-04" \
+  https://api.github.com/repos/OWNER/REPO/releases/generate-notes \
+  -d '{"tag_name":"v1.0.0","target_commitish":"main","previous_tag_name":"v0.9.2","configuration_file_path":".github/custom_release_config.yml"}'curl -L \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  https://api.github.com/repos/OWNER/REPO/releases/latestcurl -L \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  -H "X-GitHub-Api-Version: 2023-11-04" \
+  https://api.github.com/repos/OWNER/REPO/releases/latestPOST /accounts/id Twonpuncho23 
